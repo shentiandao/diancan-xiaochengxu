@@ -1,0 +1,62 @@
+page {
+  background: #FF9500;
+}
+
+.container {
+  width: 80%;
+  margin: 4%;
+  background: white;
+  border: 20px solid white;
+  border-radius: 98rpx;
+}
+
+.tip {
+  color: red;
+  font-size: 30rpx;
+  margin: 0 auto;
+}
+
+.line_1px {
+  background-color: white;
+}
+
+.item_root {
+  background: #ffffff;
+  padding: 8px 10px;
+}
+
+.textarea80px {
+  /* 输入文本框的公有属性 */
+  width: 90%;
+  height: 85px;
+  border: 1px solid #FF9500;
+}
+
+.textarea25px {
+  width: 100%;
+  padding-left: 30rpx;
+  height: 25px;
+  border: 2px solid #FF9500;
+  border-radius: 99rpx;
+}
+
+.my_item_small {
+  /* 带选择箭头 */
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 10px;
+  background: white;
+  /* border-bottom: 1px solid white;  */
+}
+
+/* 发布按钮 */
+.btn_fabu {
+  width: 40%;
+  height: 40px;
+  margin-top: 20px;
+  align-items: center;
+  border-radius: 95rpx;
+
+}

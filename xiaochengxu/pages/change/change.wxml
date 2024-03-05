@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="tip" wx:if="{{first}}">第一次注册有1000￥，可当现金用</view>
+  <view class='item_root'>
+    姓名(必填)：
+    <input class="textarea25px" bindinput="bindinputusername" value="{{username}}" maxlength='10' />
+  </view>
+  <view class='item_root'>
+    电话(必填)：
+    <input class="textarea25px" bindinput="bindinputphone" value="{{phone}}" maxlength='11' />
+  </view>
+</view>
+<!-- 提交按钮 -->
+<button class='btn_fabu' bindtap='formSubmit' type='primary'>提交修改</button>

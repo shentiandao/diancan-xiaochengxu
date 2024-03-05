@@ -1,0 +1,39 @@
+<!--pages/me/me.wxml-->
+<view class="header" wx:if="{{userInfo&&userInfo.nickName}}" bindtap='change'>
+	<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" bindtap="onChooseAvatar"></image>
+	<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+	<text class="vip_time" bindtap="goVip" wx:if="{{shengyu>0}}">会员截止时间:{{vipTimeStr}}</text>
+	<text class="exit" catchtap="exit">退出登录</text>
+</view>
+<!--如果用户没有授权，显示登录按钮  -->
+<view wx:else class="btn-login">
+	<button type="primary" bindtap="getUserProfile">授权登录</button>
+</view>
+<view class='line_5px' />
+<view wx:if="{{userInfo&&userInfo.nickName}}">
+	<view class='my_item' bindtap="change">
+		<text class="zhuce">修改信息</text>
+		<view class='right_arrow' />
+	</view>
+	<!-- <view class='my_item' bindtap="goVip">
+		<text class="vip">会员充值</text>
+		<view class='right_arrow' />
+	</view> -->
+	<!-- 我的订单 -->
+	<view class='my_item' bindtap="goToMyOrder">
+		<text>我的订单</text>
+		<view class='right_arrow' />
+	</view>
+	<view class='my_item' bindtap="goToMyComment">
+		<text>我的评价</text>
+		<view class='right_arrow' />
+	</view>
+	<view class='my_item' bindtap="booking_table">
+		<text>我的排号</text>
+		<view class='right_arrow' />
+	</view>
+</view>
+<view class='my_item' bindtap="contacting_customer_service">
+	<text>饭店电话</text>
+	<view class='right_arrow' />
+</view>

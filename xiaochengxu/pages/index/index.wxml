@@ -1,0 +1,44 @@
+<!-- 轮播图 -->
+
+<view>
+  <swiper indicator-dots="{{true}}" indicator-color="#FF9500" autoplay="true" circular="true">
+    <block wx:for="{{banner}}" wx:key="banner">
+      <swiper-item>
+        <image src='{{item.picUrl}}' mode="aspectFill" style="width:100%;height:100%;" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 搜索框 -->
+<view class="searchRoot">
+  <input class="searchInput" bindinput="getSearchKey" placeholder="搜索菜品"></input>
+  <image class="searchImg" bindtap="goSearch" src="../../image/searching.png"></image>
+</view>
+
+
+<view class="category-panel1">
+  <view class="category-panel2">
+    <view bindtap='btnclick1' class="category-item">
+      <image class="category-item-image" src="/image/scan.png" />
+      <text class="category-item-text">扫码点餐</text>
+    </view>
+    <view bindtap='btnclick2' class="category-item">
+      <image class="category-item-image" src="/image/menu.png" />
+      <text class="category-item-text">菜单浏览</text>
+    </view>
+  </view>
+
+  <view class="category-panel2">
+    <view bindtap='btnclick3' class="category-item">
+      <image class="category-item-image" src="/image/appointment.png" />
+      <text class="category-item-text">预约餐桌</text>
+    </view>
+    <view class="category-item">
+      <button class="kf_button" open-type="contact" session-from="weapp">
+        <image class="category-item-image1" src="/image/customer service.png" />
+      </button>
+      <text class="category-item-text1">在线客服</text>
+    </view>
+  </view>
+</view>

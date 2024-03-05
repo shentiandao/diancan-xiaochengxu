@@ -1,0 +1,69 @@
+/* pages/me.wxss */
+
+page {
+  background: #FF9500;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FF9500;
+}
+
+.exit {
+  color: gray;
+  font-size: 28rpx;
+  padding: 15rpx;
+}
+
+.btn-login {
+  padding: 8%;
+  background: white;
+}
+
+.userinfo-avatar {
+  border-radius: 128rpx;
+  width: 128rpx;
+  height: 128rpx;
+  margin-block-start: 10px;
+
+}
+
+.userinfo-nickname {
+  margin-top: 20rpx;
+  font-size: 38rpx;
+}
+
+.vip_time {
+  color: red;
+  font-size: 33rpx;
+  padding-top: 40rpx;
+}
+
+/* 注册会员 */
+.zhuce::after {
+  content: " ";
+  font-size: 32rpx;
+  color: red;
+}
+
+.vip::after {
+  content: " (可享8折优惠)";
+  font-size: 32rpx;
+  color: red;
+}
+
+.runner_desc {
+  font-size: 10pt;
+  color: red
+}
+
+.dizhizi {
+  color: white
+}
+
+.dizhi {
+  margin-top: 200px;
+}

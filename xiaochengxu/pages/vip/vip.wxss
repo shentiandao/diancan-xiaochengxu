@@ -1,0 +1,38 @@
+.tip {
+  margin-top: 30rpx;
+  margin-bottom: 60rpx;
+  text-align: center;
+  color: red;
+}
+
+/* 会员充值 */
+.vip_root {
+  margin-top: 90rpx;
+  margin-left: 20rpx;
+}
+
+.vip_year {
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx;
+}
+
+.vip_year1 {
+  color: white;
+  font-size: 45rpx;
+  width: 300rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background: gold;
+}
+
+.vip_year2 {
+  color: white;
+  font-size: 45rpx;
+  width: 300rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  background: goldenrod;
+}

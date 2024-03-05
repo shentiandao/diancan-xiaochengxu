@@ -1,0 +1,10 @@
+<view class="tip" wx:if="{{shengyu>0}}">会员结束时间：{{vipTimeStr}}</view>
+<view class="tip" wx:else>您还不是会员，或者会员已过期</view>
+<view class="vip_root" wx:if="{{user.phone}}">
+  <view class="tip">积分余额：{{user.money}}</view>
+  <view>充值会员(可享8折优惠)</view>
+  <view class="vip_year">
+    <view class="vip_year1" bindtap="payVip" data-year="1">充值一年</view>
+    <view class="vip_year2" bindtap="payVip" data-year="2">充值二年</view>
+  </view>
+</view>

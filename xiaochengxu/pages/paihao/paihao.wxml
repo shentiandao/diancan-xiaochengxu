@@ -1,0 +1,17 @@
+<!-- 未排号 -->
+<view class="weipaihaoRoot" wx:if="{{num<1}}">
+	<view class="paihao" bindtap="quhao" data-type="0">
+		<text class="paihaoTip">排小桌(1-4人桌)</text>
+	</view>
+	<view class="paihao" bindtap="quhao" data-type="1">
+		<text class="paihaoTip">排大桌(4-10人桌)</text>
+	</view>
+</view>
+<!-- 已排号 -->
+<view wx:else class="weipaihaoRoot">
+	<text class="myPaiHao">小桌{{smallOkNum}}号请就餐</text>
+	<text class="myPaiHao">大桌{{bigOkNum}}号请就餐</text>
+	<text class="myPaiHao2">您当前是{{type==1?"大桌":"小桌"}}{{num}}号</text>
+	<text class="myPaiHao3" wx:if="{{type==0&&smallOkNum==num||type==1&&bigOkNum==num}}">当前叫到您了，可以就座啦</text>
+	<button class="button" type="primary" bindtap="paihaoAgain">重新排号</button>
+</view>

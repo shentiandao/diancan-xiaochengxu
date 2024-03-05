@@ -1,0 +1,48 @@
+.weipaihaoRoot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paihao {
+  /* 排号 */
+  background: gold;
+  display: flex;
+  flex-direction: column;
+  width: 450rpx;
+  height: 250rpx;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120rpx;
+}
+
+.paihaoTip {
+  font-size: 1.4rem;
+}
+
+.paihaoNum {
+  color: red;
+  margin-top: 25rpx;
+}
+
+.myPaiHao {
+  margin-top: 100rpx;
+  text-align: center;
+  font-size: 1.1rem;
+  color: green;
+}
+.myPaiHao2 {
+  margin-top: 100rpx;
+  text-align: center;
+  font-size: 1.3rem;
+  color: gold;
+}
+.myPaiHao3 {
+  margin-top: 100rpx;
+  text-align: center;
+  font-size: 1.5rem;
+  color: red;
+}
+.button{
+  margin-top: 70rpx;
+}
